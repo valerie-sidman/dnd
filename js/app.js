@@ -106,6 +106,7 @@ Array.from(newCardButton).forEach((clickedButton) => {
       localStorage.setItem('Cards', JSON.stringify(savedCardsNew));
       newCardForm.remove();
       actionMouse(newCard);
+      // eslint-disable-next-line no-use-before-define
       drag(newCard);
     });
   });
